@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DealNoDealGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5o3-Eh-1Hp">
+                                <rect key="frame" x="16" y="79" width="361" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="deal_no_deal_logo"/>
+                                </buttonConfiguration>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose 4 Cases" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nrp-1F-JPc">
+                                <rect key="frame" x="16" y="130" width="361" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V6g-bo-804">
+                                <rect key="frame" x="20" y="176" width="97" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="suitcase_position_1"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="Case_buttons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VOr-IG-0yR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xEf-qS-lhD">
+                                <rect key="frame" x="133" y="176" width="96" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="suitcase_position_2"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="Case_buttons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MNG-oF-LA5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="100" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mM1-OH-p6l">
+                                <rect key="frame" x="241" y="192" width="136" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="reward_1"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="Case_buttons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CKr-Fc-53O"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1000" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zi6-6v-Eia">
+                                <rect key="frame" x="241" y="235" width="136" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="reward_10"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="Case_buttons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ki7-bj-ETY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="puH-f9-Lja">
+                                <rect key="frame" x="18" y="275" width="97" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="suitcase_position_3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="Case_buttons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Aar-Qq-WKE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aa4-w5-iBm">
+                                <rect key="frame" x="131" y="275" width="96" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="suitcase_position_4"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="Case_buttons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4jg-6s-DAD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5000" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3hp-V6-4ut">
+                                <rect key="frame" x="239" y="291" width="136" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="reward_50"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="Case_buttons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Yg-nc-uYk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="10000" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P0z-Ei-iET">
+                                <rect key="frame" x="239" y="334" width="136" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="reward_100"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="Case_buttons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mlt-aq-iSh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8vO-Qe-kBL">
+                                <rect key="frame" x="16" y="374" width="97" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="suitcase_position_5"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="Case_buttons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K1h-LC-ewV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wgl-cv-vYK">
+                                <rect key="frame" x="129" y="374" width="96" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="suitcase_position_6"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="Case_buttons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fKa-3B-wV7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="30000" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WdQ-z9-UE1">
+                                <rect key="frame" x="237" y="390" width="136" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="reward_300"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="Case_buttons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xVg-4C-eFq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="100000" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ale-pU-Gza">
+                                <rect key="frame" x="237" y="433" width="136" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="reward_1000"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="Case_buttons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cWt-Mw-1g0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aWr-Mr-WAv">
+                                <rect key="frame" x="18" y="473" width="97" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="suitcase_position_7"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="Case_buttons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="roy-I2-8mz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O0C-mM-mjx">
+                                <rect key="frame" x="131" y="473" width="96" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="suitcase_position_8"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="Case_buttons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z43-A3-D73"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1000000" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y0S-kK-bqW">
+                                <rect key="frame" x="239" y="489" width="136" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="reward_10000"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="Case_buttons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BLa-aN-9rz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5000000" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mEu-tt-5Sn">
+                                <rect key="frame" x="239" y="532" width="136" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="reward_50000"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="Case_buttons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VJB-h3-K3B"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ib-mu-qtd">
+                                <rect key="frame" x="16" y="572" width="97" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="suitcase_position_9"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="Case_buttons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mqg-l3-xBV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="10" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y0v-60-gC5">
+                                <rect key="frame" x="129" y="572" width="96" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="suitcase_position_10"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="Case_buttons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uzj-KI-8ul"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="10000000" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dRF-4y-pfP">
+                                <rect key="frame" x="237" y="588" width="136" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="reward_100000"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="Case_buttons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vZc-9c-Zui"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="50000000" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y5H-n7-ic9">
+                                <rect key="frame" x="237" y="631" width="136" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="reward_500000"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="Case_buttons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NHZ-2H-8ta"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LBC-g3-PmF">
+                                <rect key="frame" x="121" y="727" width="104" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Reset">
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" red="1" green="0.80075062620731463" blue="0.51900698963665981" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="Reset_Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g3g-9e-xqB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="113.74045801526717" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="deal_no_deal_logo" width="588" height="82"/>
+        <image name="reward_1" width="512" height="170"/>
+        <image name="reward_10" width="512" height="170"/>
+        <image name="reward_100" width="512" height="170"/>
+        <image name="reward_1000" width="512" height="170"/>
+        <image name="reward_10000" width="512" height="170"/>
+        <image name="reward_100000" width="512" height="170"/>
+        <image name="reward_300" width="512" height="170"/>
+        <image name="reward_50" width="512" height="170"/>
+        <image name="reward_50000" width="512" height="170"/>
+        <image name="reward_500000" width="512" height="170"/>
+        <image name="suitcase_position_1" width="512" height="512"/>
+        <image name="suitcase_position_10" width="512" height="512"/>
+        <image name="suitcase_position_2" width="512" height="512"/>
+        <image name="suitcase_position_3" width="512" height="512"/>
+        <image name="suitcase_position_4" width="512" height="512"/>
+        <image name="suitcase_position_5" width="512" height="512"/>
+        <image name="suitcase_position_6" width="512" height="512"/>
+        <image name="suitcase_position_7" width="512" height="512"/>
+        <image name="suitcase_position_8" width="512" height="512"/>
+        <image name="suitcase_position_9" width="512" height="512"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

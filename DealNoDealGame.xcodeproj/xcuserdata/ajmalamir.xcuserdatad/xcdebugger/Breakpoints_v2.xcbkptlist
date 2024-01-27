@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "E4EFD016-AE7C-4BAC-BBF1-F765307296D1"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "61B09999-0CAD-434E-83FB-3EE3317883A8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DealNoDealGame/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "61B09999-0CAD-434E-83FB-3EE3317883A8 - 71e576e7ecf99f80"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DealNoDealGame.ViewController.soutcaseMap.getter : Swift.Dictionary&lt;Swift.Int, DealNoDealGame.BreafCaseInfo&gt;"
+                  moduleName = "DealNoDealGame"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ajmalamir/Documents/Swift_codes/DealNoDealGame/DealNoDealGame/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "61B09999-0CAD-434E-83FB-3EE3317883A8 - c6cc571074610a1a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DealNoDealGame.ViewController.soutcaseMap.setter : Swift.Dictionary&lt;Swift.Int, DealNoDealGame.BreafCaseInfo&gt;"
+                  moduleName = "DealNoDealGame"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ajmalamir/Documents/Swift_codes/DealNoDealGame/DealNoDealGame/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "61B09999-0CAD-434E-83FB-3EE3317883A8 - 2c87829cc244a105"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DealNoDealGame.ViewController.soutcaseMap.modify : Swift.Dictionary&lt;Swift.Int, DealNoDealGame.BreafCaseInfo&gt;"
+                  moduleName = "DealNoDealGame"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ajmalamir/Documents/Swift_codes/DealNoDealGame/DealNoDealGame/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "61B09999-0CAD-434E-83FB-3EE3317883A8 - 7f93307ec30949d2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DealNoDealGame.ViewController.soutcaseMap.modify : Swift.Dictionary&lt;Swift.Int, DealNoDealGame.BreafCaseInfo&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "DealNoDealGame"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ajmalamir/Documents/Swift_codes/DealNoDealGame/%3Ccompiler-generated%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "61B09999-0CAD-434E-83FB-3EE3317883A8 - 50a5bc74373457f9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DealNoDealGame.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; DealNoDealGame.ViewController"
+                  moduleName = "DealNoDealGame"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ajmalamir/Documents/Swift_codes/DealNoDealGame/DealNoDealGame/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "2084">
+               </Location>
+               <Location
+                  uuid = "61B09999-0CAD-434E-83FB-3EE3317883A8 - b555e600e5ddf9b5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DealNoDealGame.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;DealNoDealGame.ViewController&gt;"
+                  moduleName = "DealNoDealGame"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ajmalamir/Documents/Swift_codes/DealNoDealGame/DealNoDealGame/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "2060">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6249AD5D-09BE-4961-9F40-8F4D22A2BE8C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DealNoDealGame/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "6249AD5D-09BE-4961-9F40-8F4D22A2BE8C - 51292482a7972807"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DealNoDealGame.ViewController.rewardMap.getter : Swift.Dictionary&lt;Swift.String, Swift.String&gt;"
+                  moduleName = "DealNoDealGame"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ajmalamir/Documents/Swift_codes/DealNoDealGame/DealNoDealGame/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "6249AD5D-09BE-4961-9F40-8F4D22A2BE8C - eacf5858d1cdb1b4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DealNoDealGame.ViewController.rewardMap.setter : Swift.Dictionary&lt;Swift.String, Swift.String&gt;"
+                  moduleName = "DealNoDealGame"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ajmalamir/Documents/Swift_codes/DealNoDealGame/DealNoDealGame/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "67"
+                  endingLineNumber = "67"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "6249AD5D-09BE-4961-9F40-8F4D22A2BE8C - 9b2662cc7157b5a5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DealNoDealGame.ViewController.rewardMap.modify : Swift.Dictionary&lt;Swift.String, Swift.String&gt;"
+                  moduleName = "DealNoDealGame"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ajmalamir/Documents/Swift_codes/DealNoDealGame/DealNoDealGame/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "67"
+                  endingLineNumber = "67"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "6249AD5D-09BE-4961-9F40-8F4D22A2BE8C - 74f480230c0afdfb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DealNoDealGame.ViewController.rewardMap.modify : Swift.Dictionary&lt;Swift.String, Swift.String&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "DealNoDealGame"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ajmalamir/Documents/Swift_codes/DealNoDealGame/%3Ccompiler-generated%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "6249AD5D-09BE-4961-9F40-8F4D22A2BE8C - 50a5bc74373457d8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DealNoDealGame.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; DealNoDealGame.ViewController"
+                  moduleName = "DealNoDealGame"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ajmalamir/Documents/Swift_codes/DealNoDealGame/DealNoDealGame/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "67"
+                  endingLineNumber = "67"
+                  offsetFromSymbolStart = "2156">
+               </Location>
+               <Location
+                  uuid = "6249AD5D-09BE-4961-9F40-8F4D22A2BE8C - b555e600e5ddf994"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DealNoDealGame.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;DealNoDealGame.ViewController&gt;"
+                  moduleName = "DealNoDealGame"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ajmalamir/Documents/Swift_codes/DealNoDealGame/DealNoDealGame/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "67"
+                  endingLineNumber = "67"
+                  offsetFromSymbolStart = "2132">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
