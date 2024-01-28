@@ -76,7 +76,6 @@ class ViewController: UIViewController {
         // Create a shuffled array of suitcases
         var suffledSutcase = [String]()
         suffledSutcase.append(contentsOf: suitcaseArray)
-//        suffledSutcase.append(contentsOf: suitcaseArray)
         suffledSutcase = suffledSutcase.shuffled()
         
         soutcaseMap.removeAll() // Clear the suitcase map
@@ -88,30 +87,50 @@ class ViewController: UIViewController {
             let valuTag: Int = 1 + index
             let suitcaseName = suffledSutcase[index]
             
+            let rewardIdentifier: Int = tag * 100
+            
             // Use modulo to cycle through the positions
             let positionIndex = index % suitcasePositionArray.count
             let soutcasePosition = suitcasePositionArray[positionIndex]
             
 
-            let temp = suitcaseName.split(separator: "_").last
+            let moneyValue = suitcaseName.split(separator: "_").last
 //            let tmp2 = temp.last;
             
-            var reward_string = "reward_open_"
-            reward_string += temp!
+            var reward_open_string = "reward_open_"  // open means reward with cross (the reward is opened)
+            reward_open_string += moneyValue!
             
             
-            rewardMap[suitcaseName] = reward_string // Map suitcase to its corresponding opened reward
+            rewardMap[suitcaseName] = reward_open_string // Map suitcase to its corresponding opened reward
             
 
-            let soutcasInfo = BreafCaseInfo(tage: tag, suitcaseName: suitcaseName)
-            soutcaseMap[tag] = soutcasInfo // Map tag to suitcase information
+            let soutcaseInfo = BreafCaseInfo(tage: tag, suitcaseName: suitcaseName)
+            soutcaseMap[tag] = soutcaseInfo // Map tag to suitcase information
             
             // Set background images for suitcase and value buttons
             if let button = view.viewWithTag(tag) as? UIButton, let valueButton = view.viewWithTag(valuTag) as? UIButton {
                 button.configuration?.background.image = UIImage(named: soutcasePosition)
                 valueButton.configuration?.background.image = UIImage(named: soutcasePosition)
+                print("value button tag: \(valueButton.tag)")
+                print("button tag: \(button.tag)")
             } else {
                 print("Button with tag \(tag) not found.")
+            }
+        }
+        
+        // iterate through the 10 rewards button
+        for currentRewards in rewardsArray {
+            if let rewardValue = currentRewards.split(separator: "_").last, let moneyValue = Int(rewardValue) {
+                let rewardIdentifier = moneyValue * 100
+                if let rewardButton = view.viewWithTag(rewardIdentifier) as? UIButton {
+                    rewardButton.configuration?.background.image = UIImage(named: currentRewards)
+                    print("button tag: \(rewardButton.tag)")
+                    print("reward img val: \(currentRewards)")
+                } else {
+                    print("Button with tag \(rewardIdentifier) not found.")
+                }
+            } else {
+                print("String does not contain a valid integer")
             }
         }
         print(rewardMap)
@@ -141,11 +160,11 @@ class ViewController: UIViewController {
 
                 if let rewardName = rewardMap[soutcasInfo.suitcaseName] {
                     // Find the index of the corresponding reward in rewardsArray
-                    let temp2 = rewardName.split(separator: "_").last
+                    let moneyValue = rewardName.split(separator: "_").last
                     var reward_unopened_string = "reward_"
-                    reward_unopened_string += temp2!
+                    reward_unopened_string += moneyValue!
 
-                    var tagNumber = Int(temp2!)
+                    var tagNumber = Int(moneyValue!)
                     tagNumber = tagNumber! * 100
 
                     if let rewardButton = self.view.viewWithTag(tagNumber!) as? UIButton {
@@ -159,6 +178,7 @@ class ViewController: UIViewController {
                         }
                     }
 
+                    // what does the following do?
                     if let rewardIndex = rewardsArray.firstIndex(where: { rewardName.contains($0) }) {
                         let rewardTag = rewardIndex + 1
                         // Update reward image
