@@ -73,6 +73,8 @@ class ViewController: UIViewController {
     }
     
     func setupGame() {
+//        labelOutlet.text = "Choose \(cardNumber) Cases"
+        
         // Create a shuffled array of suitcases
         var suffledSutcase = [String]()
         suffledSutcase.append(contentsOf: suitcaseArray)
@@ -86,8 +88,6 @@ class ViewController: UIViewController {
             let tag: Int = 1 + index
             let valuTag: Int = 1 + index
             let suitcaseName = suffledSutcase[index]
-            
-            let rewardIdentifier: Int = tag * 100
             
             // Use modulo to cycle through the positions
             let positionIndex = index % suitcasePositionArray.count
@@ -124,7 +124,7 @@ class ViewController: UIViewController {
                 let rewardIdentifier = moneyValue * 100
                 if let rewardButton = view.viewWithTag(rewardIdentifier) as? UIButton {
                     rewardButton.configuration?.background.image = UIImage(named: currentRewards)
-                    print("button tag: \(rewardButton.tag)")
+                    print("reward button tag: \(rewardButton.tag)")
                     print("reward img val: \(currentRewards)")
                 } else {
                     print("Button with tag \(rewardIdentifier) not found.")
@@ -134,12 +134,18 @@ class ViewController: UIViewController {
             }
         }
         print(rewardMap)
+        cardNumber = 4
+        self.cardNumberLabel.text = "Choose \(self.cardNumber) Cases"
     }
     
     // Variables to store information about opened suitcases and values
     var suitcaseInfo1: BreafCaseInfo?
     var valueInfo: ValueInfo?
     
+    // storing the card number
+    var cardNumber = 3
+    
+    @IBOutlet weak var cardNumberLabel: UILabel!
     
     @IBAction func Case_buttons(_ sender: Any) {
         let Case_buttons = sender as! UIButton
@@ -193,6 +199,12 @@ class ViewController: UIViewController {
                             }
                         }
                     }
+                }
+                self.cardNumber -= 1
+                self.cardNumberLabel.text = "Choose \(self.cardNumber) Cases"
+                
+                if self.cardNumber == 1 {
+                    // game completed
                 }
             }
         }

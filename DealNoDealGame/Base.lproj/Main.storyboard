@@ -51,6 +51,7 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="Case_buttons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MNG-oF-LA5"/>
+                                    <action selector="labelUpdated" destination="BYZ-38-t0r" eventType="touchUpInside" id="nAs-rt-6oc"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="100" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mM1-OH-p6l">
@@ -267,6 +268,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="cardNumberLabel" destination="Nrp-1F-JPc" id="8HR-Hi-jX6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
