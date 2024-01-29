@@ -73,6 +73,9 @@ class ViewController: UIViewController {
     }
     
     func setupGame() {
+        dealOngoing = false
+        showDealButtons()
+        
         // Create a shuffled array of suitcases
         var suffledSutcase = [String]()
         suffledSutcase.append(contentsOf: suitcaseArray)
@@ -240,7 +243,8 @@ class ViewController: UIViewController {
     
     // show the deal buttons
     func showDealButtons() {
-        
+        dealButton.isHidden = !dealOngoing
+        noDealButton.isHidden = !dealOngoing
     }
 
     // Action function for reset button
@@ -249,6 +253,14 @@ class ViewController: UIViewController {
     }
     
     // Action no deal
+    @IBOutlet weak var noDealButton: UIButton!
+    @IBAction func noDealAction(_ sender: UIButton) {
+        dealOngoing = false
+    }
     
     // Action deal
+    @IBOutlet weak var dealButton: UIButton!
+    @IBAction func dealAction(_ sender: UIButton) {
+        dealOngoing = false
+    }
 }

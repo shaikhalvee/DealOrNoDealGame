@@ -252,24 +252,54 @@
                                     <action selector="Case_buttons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NHZ-2H-8ta"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LBC-g3-PmF">
-                                <rect key="frame" x="121" y="727" width="104" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" tag="556" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LBC-g3-PmF">
+                                <rect key="frame" x="145" y="749.66666666666663" width="103" height="40.333333333333371"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Reset">
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <color key="baseBackgroundColor" red="1" green="0.80075062620731463" blue="0.51900698963665981" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="baseBackgroundColor" red="0.96078431610000004" green="0.80392158030000005" blue="0.55686277149999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="Reset_Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g3g-9e-xqB"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" tag="555" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ITn-gn-0rG">
+                                <rect key="frame" x="20" y="694" width="103" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Deal">
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" red="0.96078431610000004" green="0.80392158030000005" blue="0.55686277149999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="dealAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="caV-oh-Jy9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="557" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3kn-nT-T1e">
+                                <rect key="frame" x="270" y="694" width="103" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="No Deal">
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" red="0.96078431610000004" green="0.80392158030000005" blue="0.55686277149999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="noDealAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2S1-UV-WmK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LBC-g3-PmF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="145" id="AwZ-yU-MwU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="LBC-g3-PmF" secondAttribute="bottom" constant="28" id="SSi-qn-erF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LBC-g3-PmF" secondAttribute="trailing" constant="145" id="Yqy-lC-IC4"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="caseNumberLabel" destination="Nrp-1F-JPc" id="8HR-Hi-jX6"/>
+                        <outlet property="dealButton" destination="ITn-gn-0rG" id="chy-ss-hON"/>
+                        <outlet property="noDealButton" destination="3kn-nT-T1e" id="VYQ-zY-xjs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
