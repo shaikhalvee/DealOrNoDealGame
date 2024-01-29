@@ -223,8 +223,6 @@ class ViewController: UIViewController {
                         self.caseNumberLabel.text = "Bank Deal is $\(bankDealValue)"
                         showDealButtons()
                     }
-                } else {
-                    
                 }
             }
         }
