@@ -147,6 +147,7 @@ class ViewController: UIViewController {
     var caseNumber = 4
     
     var dealOngoing: Bool = false, mainRound: Bool = true, finalRound: Bool = false
+    var bankDealValue: Double = 0
     
     @IBOutlet weak var caseNumberLabel: UILabel!
     
@@ -204,19 +205,20 @@ class ViewController: UIViewController {
                         }
                     }
                 }
-                if mainRound {
+                if 1...4 ~= self.caseNumber {
                     self.caseNumber -= 1
                     self.caseNumberLabel.text = "Choose \(caseNumber) Cases"
                     print("current case number: \(caseNumber)")
-                    if self.caseNumber <= 0 {
+                    if self.caseNumber == 0 {
                         // first or second round completed
                         // show bank deal (60% of the avg. of unopened suitcase)
                         // button -> deal, no deal
                         
                         dealOngoing = true
                         let deal = calculateBankDeal(soutcaseMap)
-                        print("Bank deal is \(deal)")
-                        self.caseNumberLabel.text = "Bank Deal is $\(deal)"
+                        bankDealValue = deal.rounded()
+                        print("Bank deal is \(bankDealValue)")
+                        self.caseNumberLabel.text = "Bank Deal is $\(bankDealValue)"
                         showDealButtons()
                     }
                 } else {
@@ -256,11 +258,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var noDealButton: UIButton!
     @IBAction func noDealAction(_ sender: UIButton) {
         dealOngoing = false
+        
     }
     
     // Action deal
     @IBOutlet weak var dealButton: UIButton!
     @IBAction func dealAction(_ sender: UIButton) {
         dealOngoing = false
+        showDealButtons()
+        // show bankDealValue
+        self.caseNumberLabel.text = "You won $\(bankDealValue)!"
     }
 }
