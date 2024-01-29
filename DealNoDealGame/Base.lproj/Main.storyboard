@@ -269,7 +269,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="cardNumberLabel" destination="Nrp-1F-JPc" id="8HR-Hi-jX6"/>
+                        <outlet property="caseNumberLabel" destination="Nrp-1F-JPc" id="8HR-Hi-jX6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

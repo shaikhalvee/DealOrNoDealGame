@@ -73,8 +73,6 @@ class ViewController: UIViewController {
     }
     
     func setupGame() {
-//        labelOutlet.text = "Choose \(cardNumber) Cases"
-        
         // Create a shuffled array of suitcases
         var suffledSutcase = [String]()
         suffledSutcase.append(contentsOf: suitcaseArray)
@@ -134,18 +132,20 @@ class ViewController: UIViewController {
             }
         }
         print(rewardMap)
-        cardNumber = 4
-        self.cardNumberLabel.text = "Choose \(self.cardNumber) Cases"
+        caseNumber = 4
+        self.caseNumberLabel.text = "Choose \(self.caseNumber) Cases"
     }
     
     // Variables to store information about opened suitcases and values
-    var suitcaseInfo1: BreafCaseInfo?
+    var openedSuitCase: BreafCaseInfo?
     var valueInfo: ValueInfo?
     
     // storing the card number
-    var cardNumber = 3
+    var caseNumber = 4
     
-    @IBOutlet weak var cardNumberLabel: UILabel!
+    var dealOngoing: Bool = false, mainRound: Bool = true, finalRound: Bool = false
+    
+    @IBOutlet weak var caseNumberLabel: UILabel!
     
     @IBAction func Case_buttons(_ sender: Any) {
         let Case_buttons = sender as! UIButton
@@ -155,6 +155,7 @@ class ViewController: UIViewController {
             if !soutcasInfo.isMatched && !soutcasInfo.isFlipped {
 
                 soutcasInfo.isFlipped = true
+                soutcasInfo.isMatched = true    // if matched, means will exclude in bank deal calculation
                 // Update suitcase image
                 if let newImage = UIImage(named: soutcasInfo.suitcaseName) {
                     Case_buttons.configuration?.background.image = newImage
@@ -200,19 +201,54 @@ class ViewController: UIViewController {
                         }
                     }
                 }
-                self.cardNumber -= 1
-                self.cardNumberLabel.text = "Choose \(self.cardNumber) Cases"
-                
-                if self.cardNumber == 1 {
-                    // game completed
+                if mainRound {
+                    self.caseNumber -= 1
+                    self.caseNumberLabel.text = "Choose \(caseNumber) Cases"
+                    print("current case number: \(caseNumber)")
+                    if self.caseNumber <= 0 {
+                        // first or second round completed
+                        // show bank deal (60% of the avg. of unopened suitcase)
+                        // button -> deal, no deal
+                        
+                        dealOngoing = true
+                        let deal = calculateBankDeal(soutcaseMap)
+                        print("Bank deal is \(deal)")
+                        self.caseNumberLabel.text = "Bank Deal is $\(deal)"
+                        showDealButtons()
+                    }
+                } else {
+                    
                 }
             }
         }
     }
-
+    
+    func calculateBankDeal(_ suitCaseMap: [Int: BreafCaseInfo]) -> Double {
+        var sum: Double = 0
+        var count: Int = 0
+        for suitCase in suitCaseMap {
+            if !suitCase.value.isMatched {
+                // extract last string, i.e. money value of the suitcase and add to sum
+                let moneyValue = suitCase.value.suitcaseName.split(separator: "_").last
+                count += 1
+                sum += Double(moneyValue!)!
+            }
+        }
+        let dealValue: Double = (sum / Double(count)) * 0.6 // 60% of the average of values of the non opened cases.
+        return dealValue
+    }
+    
+    // show the deal buttons
+    func showDealButtons() {
+        
+    }
 
     // Action function for reset button
     @IBAction func Reset_Button(_ sender: Any) {
         setupGame() // Call the setup function to reset the game
     }
+    
+    // Action no deal
+    
+    // Action deal
 }
