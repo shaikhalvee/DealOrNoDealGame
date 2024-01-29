@@ -65,6 +65,8 @@ class ViewController: UIViewController {
     // Dictionaries to store suitcase and reward information
     var soutcaseMap = [Int: BreafCaseInfo]()
     var rewardMap = [String: String]()
+    
+    var noDealCount: Int = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -74,6 +76,9 @@ class ViewController: UIViewController {
     
     func setupGame() {
         dealOngoing = false
+        gameOver = false
+        finalRound = false
+        caseNumber = 4
         showDealButtons()
         
         // Create a shuffled array of suitcases
@@ -146,7 +151,7 @@ class ViewController: UIViewController {
     // storing the card number
     var caseNumber: Int = 4
     
-    var dealOngoing: Bool = false, mainRound: Bool = true, finalRound: Bool = false
+    var dealOngoing: Bool = false, gameOver: Bool = false, finalRound: Bool = false
     var bankDealValue: Double = 0
     
     @IBOutlet weak var caseNumberLabel: UILabel!
@@ -156,7 +161,7 @@ class ViewController: UIViewController {
         let tag = Case_buttons.tag
 
         if let soutcasInfo = soutcaseMap[tag] {
-            if !soutcasInfo.isMatched && !soutcasInfo.isFlipped {
+            if !soutcasInfo.isMatched && !soutcasInfo.isFlipped && !dealOngoing && !gameOver {
 
                 soutcasInfo.isFlipped = true
                 soutcasInfo.isMatched = true    // if matched, means will exclude in bank deal calculation
@@ -212,7 +217,7 @@ class ViewController: UIViewController {
                         self.caseNumberLabel.text = "Choose \(caseNumber) Cases"
                     }
                     print("current case number: \(caseNumber)")
-                    if self.caseNumber == 0 {
+                    if self.caseNumber == 0 && !finalRound {
                         // show bank deal (60% of the avg. of unopened suitcase)
                         // button -> deal, no deal
                         
@@ -221,7 +226,13 @@ class ViewController: UIViewController {
                         bankDealValue = deal.rounded()
                         print("Bank deal is \(bankDealValue)")
                         self.caseNumberLabel.text = "Bank Deal is $\(bankDealValue)"
+                        // after showing the buttons -> (deal, no deal) dealOngoing will be false, if not, make it false.
                         showDealButtons()
+                    }
+                    if finalRound {
+                        noDealCount = 0
+                        self.caseNumberLabel.text = "You won $\(bankDealValue)!"
+                        gameOver = true
                     }
                 }
             }
@@ -257,7 +268,23 @@ class ViewController: UIViewController {
     // Action no deal
     @IBOutlet weak var noDealButton: UIButton!
     @IBAction func noDealAction(_ sender: UIButton) {
+        
         dealOngoing = false
+        showDealButtons()
+        noDealCount += 1
+        
+        if noDealCount == 2 {
+            self.caseNumber = 1
+            noDealCount = 0
+            self.caseNumberLabel.text = "Choose \(caseNumber) Cases"
+            finalRound = true
+        } else {
+            self.caseNumber = 4
+            self.caseNumberLabel.text = "Choose \(caseNumber) Cases"
+            finalRound = false
+            gameOver = false
+        }
+        // show case numbers
         
     }
     
@@ -268,5 +295,6 @@ class ViewController: UIViewController {
         showDealButtons()
         // show bankDealValue
         self.caseNumberLabel.text = "You won $\(bankDealValue)!"
+        gameOver = true
     }
 }

@@ -14,8 +14,8 @@
             filePath = "DealNoDealGame/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
             landmarkName = "setupGame()"
             landmarkType = "7">
             <Locations>
@@ -107,8 +107,8 @@
             filePath = "DealNoDealGame/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "105"
-            endingLineNumber = "105"
+            startingLineNumber = "110"
+            endingLineNumber = "110"
             landmarkName = "setupGame()"
             landmarkType = "7">
             <Locations>
@@ -185,8 +185,8 @@
             filePath = "DealNoDealGame/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "196"
-            endingLineNumber = "196"
+            startingLineNumber = "201"
+            endingLineNumber = "201"
             landmarkName = "Case_buttons(_:)"
             landmarkType = "7">
             <Locations>
@@ -278,8 +278,8 @@
             filePath = "DealNoDealGame/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "113"
-            endingLineNumber = "113"
+            startingLineNumber = "118"
+            endingLineNumber = "118"
             landmarkName = "setupGame()"
             landmarkType = "7">
          </BreakpointContent>
@@ -294,8 +294,8 @@
             filePath = "DealNoDealGame/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "181"
-            endingLineNumber = "181"
+            startingLineNumber = "186"
+            endingLineNumber = "186"
             landmarkName = "Case_buttons(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -304,14 +304,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "C3A9DA18-B26E-4B3A-A927-101B68888E40"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DealNoDealGame/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "209"
-            endingLineNumber = "209"
+            startingLineNumber = "214"
+            endingLineNumber = "214"
             landmarkName = "Case_buttons(_:)"
             landmarkType = "7">
             <Locations>
@@ -374,6 +374,84 @@
                   startingLineNumber = "209"
                   endingLineNumber = "209"
                   offsetFromSymbolStart = "7064">
+               </Location>
+               <Location
+                  uuid = "C3A9DA18-B26E-4B3A-A927-101B68888E40 - 9ab0071e81e2f6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DealNoDealGame.ViewController.Case_buttons(Any) -&gt; ()"
+                  moduleName = "DealNoDealGame"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shaikhalvee/Documents/IoSApplication/DealNoDealGame/DealNoDealGame/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "211"
+                  endingLineNumber = "211"
+                  offsetFromSymbolStart = "7152">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C6A969CC-6E33-4DA1-9183-325224D84B62"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DealNoDealGame/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "272"
+            endingLineNumber = "272"
+            landmarkName = "noDealAction(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C6A969CC-6E33-4DA1-9183-325224D84B62 - 23a7e4a50136e7f9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DealNoDealGame.ViewController.noDealAction(__C.UIButton) -&gt; ()"
+                  moduleName = "DealNoDealGame"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shaikhalvee/Documents/IoSApplication/DealNoDealGame/DealNoDealGame/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "265"
+                  endingLineNumber = "265"
+                  offsetFromSymbolStart = "124">
+               </Location>
+               <Location
+                  uuid = "C6A969CC-6E33-4DA1-9183-325224D84B62 - 23a7e4a50136e7f9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DealNoDealGame.ViewController.noDealAction(__C.UIButton) -&gt; ()"
+                  moduleName = "DealNoDealGame"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shaikhalvee/Documents/IoSApplication/DealNoDealGame/DealNoDealGame/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "265"
+                  endingLineNumber = "265"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "C6A969CC-6E33-4DA1-9183-325224D84B62 - 23a7e4a50136e723"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DealNoDealGame.ViewController.noDealAction(__C.UIButton) -&gt; ()"
+                  moduleName = "DealNoDealGame"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shaikhalvee/Documents/IoSApplication/DealNoDealGame/DealNoDealGame/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "271"
+                  endingLineNumber = "271"
+                  offsetFromSymbolStart = "88">
                </Location>
             </Locations>
          </BreakpointContent>
