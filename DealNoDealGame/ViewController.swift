@@ -144,7 +144,7 @@ class ViewController: UIViewController {
     var valueInfo: ValueInfo?
     
     // storing the card number
-    var caseNumber = 4
+    var caseNumber: Int = 4
     
     var dealOngoing: Bool = false, mainRound: Bool = true, finalRound: Bool = false
     var bankDealValue: Double = 0
@@ -205,12 +205,14 @@ class ViewController: UIViewController {
                         }
                     }
                 }
+                // case number handling
                 if 1...4 ~= self.caseNumber {
                     self.caseNumber -= 1
-                    self.caseNumberLabel.text = "Choose \(caseNumber) Cases"
+                    if self.caseNumber != 0 {
+                        self.caseNumberLabel.text = "Choose \(caseNumber) Cases"
+                    }
                     print("current case number: \(caseNumber)")
                     if self.caseNumber == 0 {
-                        // first or second round completed
                         // show bank deal (60% of the avg. of unopened suitcase)
                         // button -> deal, no deal
                         

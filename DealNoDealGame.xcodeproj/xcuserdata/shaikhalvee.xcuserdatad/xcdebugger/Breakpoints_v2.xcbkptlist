@@ -310,8 +310,8 @@
             filePath = "DealNoDealGame/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "208"
-            endingLineNumber = "208"
+            startingLineNumber = "209"
+            endingLineNumber = "209"
             landmarkName = "Case_buttons(_:)"
             landmarkType = "7">
             <Locations>
@@ -359,6 +359,21 @@
                   startingLineNumber = "208"
                   endingLineNumber = "208"
                   offsetFromSymbolStart = "6984">
+               </Location>
+               <Location
+                  uuid = "C3A9DA18-B26E-4B3A-A927-101B68888E40 - 9ab0071e81e530"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DealNoDealGame.ViewController.Case_buttons(Any) -&gt; ()"
+                  moduleName = "DealNoDealGame"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shaikhalvee/Documents/IoSApplication/DealNoDealGame/DealNoDealGame/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "209"
+                  endingLineNumber = "209"
+                  offsetFromSymbolStart = "7064">
                </Location>
             </Locations>
          </BreakpointContent>
